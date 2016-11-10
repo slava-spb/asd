@@ -1,0 +1,11 @@
+*{ box-sizing: border-box}
+img{ max-width: 100%}
+h1{ text-align: center}
+.section{text-align: center; height: 50vh}
+button{  display: inline-block}
+ul, li{ margin: 0; padding: 0}
+li {float: left;list-style: none; width: 33%}
+.menu{ background: gray; line-height: 2em}
+.image{ width: 50%; margin: auto; padding-top:60px; text-align: center}
+.image img{ border-radius: 50%; width: 100px; height: 100px}
+.modal{ position: absolute;  border: solid 1px red; width: 100px; height: 100px; top:0; left: 0; margin: auto}

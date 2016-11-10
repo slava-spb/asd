@@ -1,0 +1,17 @@
+*{box-sizing: border-box}
+
+.section{ border: dashed 6px red;
+    padding: 10px; float: left;
+    width: 50%;
+    margin:5px 10px 20px 15px;
+}
+
+
+.section2{ border: dashed 6px red;
+    padding: 10px;
+    width: 50%; float: left;
+    margin:5px 10px 20px 15px;
+}
+*{ 
+    margin: 0 !important
+}

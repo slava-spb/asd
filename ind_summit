@@ -1,0 +1,23 @@
+
+
+<!--(header>div)+section*3+footer-->
+<header>
+    <div></div> 
+</header>
+<section></section>
+<section></section>
+<section></section>
+<footer></footer>
+
+<!--div#item-1-->
+<div id="item-1"></div>
+
+
+<!--div.navigation.nav-1-->
+<div class="navigation nav-1"></div>
+
+<!--input[type="submit"]-->
+<input type="submit"></input>
+
+<!--input[value="buttom" type="submit"]-->
+<input value="buttom" type="submit"></input>

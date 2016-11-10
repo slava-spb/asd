@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+   <div class="level-1 level section" id="item-1">
+        <div class="level-2 level">
+            <span class="level">text</span>
+            <div class="level-3 level">
+                <span>title</span>
+                <input type="button">
+                <input type="text">
+            </div>
+        </div>
