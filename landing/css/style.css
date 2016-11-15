@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'MyriadPro-Semibold';
+    src: url('../fonts/MyriadPro-Semibold.eot');
+    src: url('../fonts/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/MyriadPro-Semibold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ptsans_regular';
+    src: url('../fonts/PTS55F.eot');
+    src: url('../fonts/PTS55F.woff') format('woff'), url('../fonts/PTS55F.ttf') format('truetype'), url('../fonts/PTS55F.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{background:#fff;font-family: 'MyriadPro-Regular';}
+h1,h2,h3,h4,h5{ margin:0; padding:0}
+a:hover, a:focus{text-decoration:none; color:inherit}
+.container{ width:1180px; margin:0 auto; padding:0; position:relative}
+header{ background:#95cd89; border-bottom:solid 6px #78b46a; box-shadow:0 2px 1px 1px rgba(0,0,0,0.3); position:relative}
+header .container{ height:100px}
+.brand{ font-size:30px;  text-transform:uppercase; color:#fff;  line-height:30px; float:left; margin:20px 0}
+.brand span{ font-size:34px; display:block; font-family:'MyriadPro-Semibold'}
+header .vk{ color:#fff; display:inline-block; border:solid 3px #fff; border-radius:5px; padding:3px 5px; font-size:19px; margin:30px; vertical-align: top}
+.h-p-right{display:inline-block; font-size:19px;font-family:'MyriadPro-Semibold'; color:#fff; line-height:20px; margin:20px 0 0 }
+.h-p-right a, header a:hover{ color:#fff}
+.form_dropdown{ position:relative; display:inline-block; vertical-align:top; margin:30px 0 0 }
+.form_dropdown>a{  padding:9px 10px ; font-size:16px; border-radius:3px; display:block; color:#fff; background:#ee7933;}
+.form_dropdown>a i.fa{ margin:0 0 0 3px}
+.form_dropdown.open a{ border-radius:3px 3px 0 0}
+.form_dropdown .dropdown-form{ display:none;}
+.form_dropdown.open .dropdown-form{ display:block;z-index:9; position:absolute; background:#fff; border:solid 1px #ee7933; border-top:none; width:100%; font-family:ptsans_regular; border-radius:0 0 3px 3px}
+.form_dropdown.open.dropup .dropdown-form{ bottom:40px; top:inherit;border:solid 1px #ee7933; border-radius:3px 3px 0 0}
+.form_dropdown.open.dropup a{ border-radius:0px 0px 3px 3px }
+
+.dropdown-form{ padding:9px}
+.form-group{ margin:0px 0 15px; color:#676767; font-size:15px; text-shadow:none}
+.form-group label{ margin-bottom:1px}
+.form-group input{ font-size:16px; height:30px; border-radius:2px; border:solid 1px #d6dfe4; box-shadow:0 0 3px 0 rgba(0,0,0,.3)}
+.form-group input.form-control:focus {border-color: #b0c3cc;outline: 0;box-shadow: 0 0 8px rgba(176,195,204,.6);}
+.dropdown-form .btn{ margin:5px auto 7px ; font-family: 'MyriadPro-Semibold'; padding:3px 20px}
+
+footer{ background:#95cd89; border-top:12px solid #b6deac}
+footer .brand{color:#e1f0dd; float: none; margin-top:15px; display:inline-block}
+footer .vk{ color:#e3f2e0; float:right; border:solid 3px #e3f2e0; border-radius:5px; padding:3px 5px; font-size:19px; margin:0; vertical-align: top}
+footer .h-p-right{ margin:15px 0 0 30px}
+footer .h-p-right a{font-family: 'MyriadPro-Regular'}
+footer .form_dropdown{ margin:15px 0 0}
+footer .sm_text{ font-size:10px; color:#fff; }
+footer .pull-right{ position: absolute; right:0}
+footer .copyr{ font-size:12px; color:#cee7c9; margin:10px 0}
+
+.bg_top{ background:url(../img/bg01.jpg) center no-repeat; background-size:cover; padding:25px 0; margin:0 }
+.bg_top h1 {color:#20331b; font-size:48px; text-transform:uppercase; text-shadow:1px 1px 1px rgba(0,0,0,0.5); line-height:48px; }
+.bg_top h1 b{font-family: 'MyriadPro-Semibold';}
+.bg_top h5 {color:#5c6858; font-size:20px; margin:7px 0 }
+.table_price{ display:inline-block}
+.table_price table{ width:auto; margin:0 auto; background:#4c875c; border-collapse: separate; border-spacing:2px}
+.table_price th{font-family: 'MyriadPro-Semibold'; background:#a3d9a1; color:#fff; font-size:23px; line-height:24px; padding:10px; font-weight:normal; text-align:center }
+.table_price td{ background:#fff;font-family: 'MyriadPro-Semibold'; padding:13px; font-size:23px; }
+.table_price tr td:first-child { font-size:29px; color:#93c263}
+.table_price tr td:last-child { font-size:37px; padding:7px  13px  }
+.table_price .after_table{ color:#848484; font-size:14px; text-align: left; font-style:italic}
+.orange_link.btn.big{ font-size:20px; text-transform: uppercase;    font-family: 'MyriadPro-Semibold'; padding:7px 20px}
+#fix_nav.affix{ top:0; z-index:9;width: 100%;left: 0; background:#f8f8f8; border-top:solid 1px #f5f5f5; box-shadow:0 2px 3px 1px rgba(0,0,0,0.2);}
+.bg_gray{ background:#f8f8f8; margin-bottom:0; padding-top:0}
+.bg_gray.center{ border-bottom:solid 1px #e7e7e7; border-top: solid 1px #e7e7e7}
+h3{ font-size:33px; color:#f68b1f; text-align:center; text-transform:uppercase; position:relative; margin:60px 0 20px 0}
+h3:after{ border-top:solid 1px #c5daaf; width:100%; position:absolute; content:""; top:17px; left:0; z-index:0}
+.bg_gray h3 span{ background:#f8f8f8; padding:0 30px; position:relative; z-index:1}
+.bg_white h3 span{ background:#fff; padding:0 30px; position:relative; z-index:1}
+
+.circle_block{ width:80%; margin:0 auto}
+.circle_block .circle{ background:#98ce8b; width:105px; height:105px; display:block; border-radius:50%; border: solid 5px #efefef; text-align:center; vertical-align:top; margin:0 auto}
+.ico{ background-image:url(../img/icons.png); background-repeat:no-repeat;width:50px; height:50px;display:inline-block; margin:25% 0 0 5%}
+.ico.ico1{  background-position:0 0; }
+.ico.ico2{  background-position:-314px 0; }
+.ico.ico3{  background-position:-633px 0; }
+.circle_block p{ text-align:center; margin:10px 0}
+.circle_block p b{ color:#98ce8b; font-size:20px; display:block; text-transform:uppercase}
+.circle_block p i{ font-size:16px;color:#848484}
+.circle_block p i span{ font-size:24px; }
+
+.double_block{ padding:0; margin:0;display:table; width:100%; position:relative}
+.double_block:after{ border-top:solid 1px #aad69f; width:100%; position:absolute; content:""; top:67px; left:0; z-index:0}
+.double_block .col-md-6{background:#f0f4ef;display:table-cell;float:none;vertical-align:top; padding-bottom:50px}
+.double_block .col-md-6:first-child{ text-align:right; background:#e9f0e6}
+.double_block .col-md-6 .wrap{max-width:570px; display:inline-block; padding:0 0 0 15px }
+.double_block .col-md-6:first-child .wrap{ text-align:left}
+.double_block h4{ color:#f08547; font-size:28px; text-transform: uppercase; margin:25px 0 50px}
+.double_block ul, .double_block p{ color:#838383; font-size:16px; line-height:18px }
+.double_block ul{ padding:0; list-style:none; margin-bottom:30px; text-align:left}
+.double_block ul li{ position:relative; margin:17px 0}
+.double_block ul li:before{ background:#98ce8b; position: ; width:3px; height:3px; display:inline-block; border-radius:50%; content:""; left:0; vertical-align:top; margin-top:7px; margin-right:5px}
+
+.jumbotron.bg_white{ background:#fff; padding:0; margin:0px}
+.jumbotron.bg_white .collapse_text{ margin-top:30px; margin-bottom:50px}
+.jumbotron.bg_white .collapse_text a{ font-size:24px; color:#f68b1f; font-style:italic}
+.jumbotron.bg_white .collapse_text a span{ text-decoration: underline}
+.jumbotron.bg_white .collapse_text ul{ color:#838383; font-size:16px; line-height:18px }
+.jumbotron.bg_white .collapse_text ul{ padding:0; list-style:none; margin-bottom:30px;}
+.jumbotron.bg_white .collapse_text ul li{ position:relative; margin:17px 0}
+.jumbotron.bg_white .collapse_text ul li:before{ background:#98ce8b; position: ; width:3px; height:3px; display:inline-block; border-radius:50%; content:""; left:0; vertical-align:top; margin-top:7px; margin-right:5px}
+
+.sm_block{ width:77%; margin:0 auto}
+.sm_block .carousel-indicators{ bottom:0; z-index:1}
+.sm_block .carousel{width:272px; height:204px; }
+.sm_block .carousel-indicators li{ background:#fff; margin:0 3px; border:none}
+.sm_block .carousel-indicators .active{ background:#f68b1f; width:10px; height:10px}
+.sm_block .text{ color:#848484; font-size:16px; padding-right:0; }
+.sm_block .text h5{ font-size:20px; text-transform:uppercase;    font-family: 'MyriadPro-Semibold'; color:#99cf8c; line-height:20px; }
+.sm_block .text p{ font-size:16px; margin:15px 0 0; line-height:22px}
+.three_block_desc{ margin-bottom:30px; margin-top:30px}
+.three_block_desc .b-item{ position:relative}
+.three_block_desc .b-item:last-child{ width:294px; padding:0}
+.three_block_desc .b-item:last-child img{ width:294px}
+.three_block_desc .b-item:last-child i{ width:294px; left:0}
+.three_block_desc .b-item img{ width:270px; height:204px; }
+.three_block_desc .b-item i{ font-size:20px; text-transform:uppercase; margin:0; position:absolute; top:124px; background:rgba(168,205,141, 0.8); font-style:normal; color:#fff; font-weight:bold; text-align:center; left:15px; right:15px; line-height:25px; padding-top:3px;  height:80px; display: table;  width:270px }
+.three_block_desc .b-item i.big{ font-size:33px}
+.three_block_desc .b-item i .color_orange{ font-size:20px}
+.three_block_desc .b-item i>span{ display: table-cell; vertical-align:middle; padding:0 10% }
+.three_block_desc .b-item>span{ color:#838383; font-size:18px; line-height:22px; text-align: center; margin:20px 5% 0; display:block}
+.sm_block.sert{ margin-bottom:30px; text-align:center}
+.sm_block.sert img{ box-shadow:3px 3px 3px 1px rgba(0,0,0,0.2); margin-bottom:20px; width:170px; height:240px}
+.bg_form{ background:url(../img/bg02.jpg) center no-repeat; background-size:cover; padding:80px 0; margin:0; 
+box-shadow:0 1px 2px 1px rgba(0,0,0,0.2); position:relative;}
+.bg_form .form-b{ background:#98ce8a; padding:25px 20px; border-radius:5px; border:solid 1px #a7ada3}
+.bg_form .form-b h4{ font-size:33px; color:#fff; text-transform:uppercase;    font-family: 'MyriadPro-Semibold'; text-align:center; font-weight:normal}
+.bg_form .form-b .btn.send{ margin:20px auto 0; display:block; font-size:18px; text-transform:uppercase; padding:5px 40px}
+.bg_form .form-b label{ margin:0 0 0 12px; font-size:14px; font-family:arial; color:#fff; font-weight:normal}
+.bg_form .form-b input{ height:34px; border-radius:3px}
+.jumbotron.map{ padding:0; margin:0}
+.jumbotron.map h4{ font-size:33px; color:#fff; text-transform:uppercase; text-shadow:1px 1px 1px rgba(0,0,0,0.2); text-align:center; background:#f48e58; padding:40px 0; font-weight:normal;}
+#map{ height:360px}
+
+.orange_link{ color:#fff; background:#ee7933; border:solid 3px #ee7933; transition: all 0.3s; outline:none !important}
+.orange_link:hover{ color:#ee7933; background:#fff; border:solid 3px #ee7933}
+.color_orange{ color:#fa8400 !important}
+.mobile_show.btn{ display:none}
+.scr-ots-top{position: relative;height: 0px;top: -50px;}
+
+@media (max-width: 1210px)
+{
+.container{ width: 93%}
+.sm_block{ width:90%}
+}
+
+@media (max-width: 1120px)
+{
+.sm_block{ width:100%}
+}
+
+@media (max-width: 1024px)
+{
+.sm_block{ width:104%;}
+}
+
+@media (max-width: 991px)
+{
+.double_block:after{ display:none}
+.double_block .col-sm-12 .wrap h4{border-bottom:solid 1px #aad69f;}
+.double_block .col-sm-12 { padding:0; float:none; display:block; }
+.double_block .col-sm-12 .wrap{ max-width:100%; padding:0}
+.double_block .col-sm-12 ul, .double_block .col-sm-12 p{ margin:0 20px 30px}
+.double_block .col-sm-12 h4{ padding:0 20px 20px; text-align: center; margin-bottom:30px}
+.sm_block .text h5{ text-align:center; margin:10px 0 20px}
+.carousel{ display:inline-block}
+.col-sm-12.b-item{ width:270px; margin:30px auto 0; padding:0;float: none; text-align:center}
+.three_block_desc .b-item i{ left:0}
+.circle_block{ width:100%}
+.container{ width:97%}
+.sm_block{ width:100%}
+}
+
+@media (max-width: 767px)
+{
+
+.mobile_show.btn{ display:inline-block; background:#f68b1f; width:34px; height:34px; border-radius:5px; color:#fff; font-size:20px; line-height:15px; text-align:center; padding:5px 0; margin:0 7px}
+header .container{ width:100%; padding:0 1.5%;height:74px}
+.brand{ font-size:17px; line-height:20px}
+.brand span{ font-size:19px}
+header .vk, .form_dropdown, header .adr, header .phone, footer .vk, .form_dropdown.dropup, footer .adr, footer .phone { display:none}
+.bg_top { padding-top:15px}
+.bg_top h1{ font-size:27px; line-height:inherit}
+.bg_top h5{ font-size:14px; margin-top:0}
+.table_price{ display:block}
+.table_price table{ width:100%}
+.table_price th{font-size:13px; line-height:12px; padding:5px 1px; font-weight:normal; text-align:center }
+.table_price td, .table_price tr td:first-child, .table_price tr td:last-child{  padding:5px 1px; font-size:16px; }
+.orange_link.btn.big{ font-size:15px}
+.jumbotron.bg_gray{ padding:0}
+.jumbotron .container{ padding:0; width:100%}
+h3{ margin-top:35px; font-size:22px}
+h3:after{ top:11px}
+.double_block .col-sm-12 h4{ font-size:22px}
+.jumbotron.bg_white .collapse_text{ margin:0; padding:15px}
+.jumbotron.bg_white .collapse_text a{ font-size:16px}
+.sm_block .text p, .three_block_desc .b-item>span{ font-size:14px}
+.three_block_desc .b-item:last-child{ width:270px; overflow:hidden}
+.bg_form{ padding:0 15px}
+.jumbotron.map h4{ font-size:22px; padding:25px 0}
+footer .copyr{ text-align:right}
+}
+
+
+@media (max-width: 370px)
+{.table_price th{font-size:10px; line-height:12px; padding:5px 0px; font-weight:normal; text-align:center }
+.table_price td, .table_price tr td:first-child, .table_price tr td:last-child{  padding:5px 1px; font-size:13px; }
+}
