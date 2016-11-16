@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+
+<body>
+
+<script>
+//1. Даны два ненулевых числа. Найти их сумму, разность, произведение и частное.
+var a,b;
+//a=21; b=2;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+
+//2. Даны два числа. Найти среднее арифметическое их квадратов и среднее арифметическое их модулей.(Math.pow Math.abs)
+var b,c;
+//b=2; c=-3;
+console.log(Math.pow(b,b))+(Math.pow(c,c))/2;
+console.log(Math.abs(b))+(Math.abs(c))/2;
+
+//3. Скорость лодки в стоячей воде V км/ч, скорость течения реки U км/ч (U < V). Время движения лодки по озеру T1 ч, а по реке (против течения) — T2 ч. Определить путь S, пройденный лодкой.
+var v, u, t1, t2, s;
+s=((v-u)*t1)+(v*t2);
+console.log(s)
+
+//4.Даны координаты (как целые от 1 до 8) двух различных полей шахматной доски. Если конь за один ход может перейти с одного поля на другое, вывести логическое значение True, в противном случае вывести значение False.
+var coord_x=['a','b','c','d','e','f','g','h'], coord_y=['1','2','3','4','5','6','7','8'];
+hourse = coord_x[2]+coord_y[3];
+
+if (hourse == (coord_x[2]+coord_y[3]))
+{console.log(true)}
+
+else { console.log('false')}
+console.log(hourse)
+</script>
+</body>
+</html>
