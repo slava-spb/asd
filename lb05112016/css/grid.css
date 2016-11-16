@@ -3,10 +3,6 @@
     
 }
 .bg{ background: yellow}
-.container{
-    width: 1170px;
-    margin: auto;
-}
 .row{
     width: 100%;
     clear: both;

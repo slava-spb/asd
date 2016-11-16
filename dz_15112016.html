@@ -30,8 +30,9 @@ console.log(s)
 //4.Даны координаты (как целые от 1 до 8) двух различных полей шахматной доски. Если конь за один ход может перейти с одного поля на другое, вывести логическое значение True, в противном случае вывести значение False.
 var coord_x=['a','b','c','d','e','f','g','h'], coord_y=['1','2','3','4','5','6','7','8'];
 hourse = coord_x[2]+coord_y[3];
+//hourse = coord_x[3]+coord_y[5];
 
-if (hourse == (coord_x[2]+coord_y[3]))
+if ((hourse == coord_x[2+2]+coord_y[3-1])||(hourse == coord_x[2+2]+coord_y[3+1])||(hourse == coord_x[2-2]+coord_y[3+1])||(hourse == coord_x[2-2]+coord_y[3-1])||(hourse == coord_x[2-1]+coord_y[3+2])||(hourse == coord_x[2-1]+coord_y[3-2]) ||(hourse == coord_x[2+1]+coord_y[3-2])||(hourse == coord_x[2+1]+coord_y[3+2]))
 {console.log(true)}
 
 else { console.log('false')}

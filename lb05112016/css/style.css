@@ -9,3 +9,20 @@ li {float: left;list-style: none; width: 33%}
 .image{ width: 50%; margin: auto; padding-top:60px; text-align: center}
 .image img{ border-radius: 50%; width: 100px; height: 100px}
 .modal{ position: absolute;  border: solid 1px red; width: 100px; height: 100px; top:0; left: 0; margin: auto}
+.container{    width: 1170px;    margin: auto;}
+
+@media (max-width:768px){
+    .container, [class*="col"] {
+    border:lightblue solid 1px; 
+    width: 100%;
+    margin: auto;
+    }
+    
+}
+
+
+/*
+modal vertical align
+top:50%;
+transform:translate(0, -50%)
+*/
