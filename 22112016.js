@@ -42,6 +42,7 @@ console.log('Выстрел'+arr.length+'патронов');
 continue;
 }
 }
+
 */
 
 
@@ -58,15 +59,10 @@ arr.push(prompt('Название города'));
 
 
 
-
-var x=prompt('Введите кол-во городов');
-x=+x; //аналог parseInt
 arr=[];
 t=1;
-
-while(t!=''){
-t=prompt('')
+while (t!=''){
+t=prompt('Введите название города')
 if (t=='') break;
 arr.push(t);
-
 }
