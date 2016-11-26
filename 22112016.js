@@ -40,8 +40,7 @@ continue;
 	arr.pop();
 console.log('Выстрел'+arr.length+'патронов');
 continue;
-}
-}
+} 
 
 */
 
