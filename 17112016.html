@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+max=1;
+min=0;
+mynumber=Math.floor(Math.random() *(max-min+1))+min;
+var answer, count=0;
+while (answer!=mynumber)
+{
+answer=prompt('Я загадал число от '+min+' до '+max+'\' Какое число я загадал');
+answer=parseInt(answer);
+if (answer < mynumber) {alert ('Больше');} 
+else if (answer > mynumber) {alert ('Меньше');}
+else  {alert ('Именно');}
+count++;
+
+}
+console.log('Загаданное число ' +mynumber+ ' отгаданно с ' +count+' попытки')
+
+
+
+/*var a=0;
+while(a!=new Date().getFullYear()) 
+{a=prompt('Введите номер года')}
+alert('Верно');
+*/
+
+</script>
+</body>
+
+</html>

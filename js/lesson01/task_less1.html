@@ -35,8 +35,7 @@
         knight = x[2] + y[3];
         console.log(knight)
             //Ход фигуры
-
-        knight = x[3] + y[5];
+        knight = prompt('Введите шаг коня с поля c4');
         console.log(knight)
 
         if ((knight == x[2 + 2] + y[3 - 1]) || (knight == x[2 + 2] + y[3 + 1]) ||
@@ -44,12 +43,14 @@
             (knight == x[2 - 1] + y[3 + 2]) || (knight == x[2 - 1] + y[3 - 2]) ||
             (knight == x[2 + 1] + y[3 - 2]) || (knight == x[2 + 1] + y[3 + 2])) 
 			{
-            console.log(true)
+             document.write('true')
         } else {
-            console.log('false')
+             document.write('false')
         }
-        console.log(knight)
+        //console.log(knight)
     </script>
+
+
 </body>
 
 </html>
