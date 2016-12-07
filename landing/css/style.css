@@ -1,36 +1,17 @@
-@font-face {
-    font-family: 'MyriadPro-Semibold';
-    src: url('../fonts/MyriadPro-Semibold.eot');
-    src: url('../fonts/MyriadPro-Semibold.woff') format('woff'), url('../fonts/MyriadPro-Semibold.ttf') format('truetype'), url('../fonts/MyriadPro-Semibold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'MyriadPro-Regular';
-    src: url('../fonts/MyriadPro-Regular.eot');
-    src: url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-@font-face {
-    font-family: 'ptsans_regular';
-    src: url('../fonts/PTS55F.eot');
-    src: url('../fonts/PTS55F.woff') format('woff'), url('../fonts/PTS55F.ttf') format('truetype'), url('../fonts/PTS55F.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
-body{background:#fff;font-family: 'MyriadPro-Regular';}
+
+body{background:#fff;font-family: 'PT Sans', sans-serif;}
 h1,h2,h3,h4,h5{ margin:0; padding:0}
 a:hover, a:focus{text-decoration:none; color:inherit}
 .container{ width:1180px; margin:0 auto; padding:0; position:relative}
 header{ background:#95cd89; border-bottom:solid 6px #78b46a; box-shadow:0 2px 1px 1px rgba(0,0,0,0.3); position:relative}
 header .container{ height:100px}
 .brand{ font-size:30px;  text-transform:uppercase; color:#fff;  line-height:30px; float:left; margin:20px 0}
-.brand span{ font-size:34px; display:block; font-family:'MyriadPro-Semibold'}
+.brand span{ font-size:34px; display:block; font-family:'PT Sans', sans-serif}
 header .vk{ color:#fff; display:inline-block; border:solid 3px #fff; border-radius:5px; padding:3px 5px; font-size:19px; margin:30px; vertical-align: top}
-.h-p-right{display:inline-block; font-size:19px;font-family:'MyriadPro-Semibold'; color:#fff; line-height:20px; margin:20px 0 0 }
+.h-p-right{display:inline-block; font-size:19px;font-family:'PT Sans', sans-serif; color:#fff; line-height:20px; margin:20px 0 0 }
 .h-p-right a, header a:hover{ color:#fff}
 .form_dropdown{ position:relative; display:inline-block; vertical-align:top; margin:30px 0 0 }
 .form_dropdown>a{  padding:9px 10px ; font-size:16px; border-radius:3px; display:block; color:#fff; background:#ee7933;}
@@ -46,13 +27,13 @@ header .vk{ color:#fff; display:inline-block; border:solid 3px #fff; border-radi
 .form-group label{ margin-bottom:1px}
 .form-group input{ font-size:16px; height:30px; border-radius:2px; border:solid 1px #d6dfe4; box-shadow:0 0 3px 0 rgba(0,0,0,.3)}
 .form-group input.form-control:focus {border-color: #b0c3cc;outline: 0;box-shadow: 0 0 8px rgba(176,195,204,.6);}
-.dropdown-form .btn{ margin:5px auto 7px ; font-family: 'MyriadPro-Semibold'; padding:3px 20px}
+.dropdown-form .btn{ margin:5px auto 7px ; font-family: 'PT Sans', sans-serif; padding:3px 20px}
 
 footer{ background:#95cd89; border-top:12px solid #b6deac}
 footer .brand{color:#e1f0dd; float: none; margin-top:15px; display:inline-block}
 footer .vk{ color:#e3f2e0; float:right; border:solid 3px #e3f2e0; border-radius:5px; padding:3px 5px; font-size:19px; margin:0; vertical-align: top}
 footer .h-p-right{ margin:15px 0 0 30px}
-footer .h-p-right a{font-family: 'MyriadPro-Regular'}
+footer .h-p-right a{font-family: 'PT Sans', sans-serif}
 footer .form_dropdown{ margin:15px 0 0}
 footer .sm_text{ font-size:10px; color:#fff; }
 footer .pull-right{ position: absolute; right:0}
@@ -60,16 +41,16 @@ footer .copyr{ font-size:12px; color:#cee7c9; margin:10px 0}
 
 .bg_top{ background:url(../img/bg01.jpg) center no-repeat; background-size:cover; padding:25px 0; margin:0 }
 .bg_top h1 {color:#20331b; font-size:48px; text-transform:uppercase; text-shadow:1px 1px 1px rgba(0,0,0,0.5); line-height:48px; }
-.bg_top h1 b{font-family: 'MyriadPro-Semibold';}
+.bg_top h1 b{font-family: 'PT Sans', sans-serif;}
 .bg_top h5 {color:#5c6858; font-size:20px; margin:7px 0 }
 .table_price{ display:inline-block}
 .table_price table{ width:auto; margin:0 auto; background:#4c875c; border-collapse: separate; border-spacing:2px}
-.table_price th{font-family: 'MyriadPro-Semibold'; background:#a3d9a1; color:#fff; font-size:23px; line-height:24px; padding:10px; font-weight:normal; text-align:center }
-.table_price td{ background:#fff;font-family: 'MyriadPro-Semibold'; padding:13px; font-size:23px; }
+.table_price th{font-family: 'PT Sans', sans-serif; background:#a3d9a1; color:#fff; font-size:23px; line-height:24px; padding:10px; font-weight:normal; text-align:center }
+.table_price td{ background:#fff;font-family: 'PT Sans', sans-serif; padding:13px; font-size:23px; }
 .table_price tr td:first-child { font-size:29px; color:#93c263}
 .table_price tr td:last-child { font-size:37px; padding:7px  13px  }
 .table_price .after_table{ color:#848484; font-size:14px; text-align: left; font-style:italic}
-.orange_link.btn.big{ font-size:20px; text-transform: uppercase;    font-family: 'MyriadPro-Semibold'; padding:7px 20px}
+.orange_link.btn.big{ font-size:20px; text-transform: uppercase;    font-family: 'PT Sans', sans-serif; padding:7px 20px}
 #fix_nav.affix{ top:0; z-index:9;width: 100%;left: 0; background:#f8f8f8; border-top:solid 1px #f5f5f5; box-shadow:0 2px 3px 1px rgba(0,0,0,0.2);}
 .bg_gray{ background:#f8f8f8; margin-bottom:0; padding-top:0}
 .bg_gray.center{ border-bottom:solid 1px #e7e7e7; border-top: solid 1px #e7e7e7}
@@ -116,7 +97,7 @@ h3:after{ border-top:solid 1px #c5daaf; width:100%; position:absolute; content:"
 .sm_block .carousel-indicators li{ background:#fff; margin:0 3px; border:none}
 .sm_block .carousel-indicators .active{ background:#f68b1f; width:10px; height:10px}
 .sm_block .text{ color:#848484; font-size:16px; padding-right:0; }
-.sm_block .text h5{ font-size:20px; text-transform:uppercase;    font-family: 'MyriadPro-Semibold'; color:#99cf8c; line-height:20px; }
+.sm_block .text h5{ font-size:20px; text-transform:uppercase;    font-family: 'PT Sans', sans-serif; color:#99cf8c; line-height:20px; }
 .sm_block .text p{ font-size:16px; margin:15px 0 0; line-height:22px}
 .three_block_desc{ margin-bottom:30px; margin-top:30px}
 .three_block_desc .b-item{ position:relative}
@@ -134,7 +115,7 @@ h3:after{ border-top:solid 1px #c5daaf; width:100%; position:absolute; content:"
 .bg_form{ background:url(../img/bg02.jpg) center no-repeat; background-size:cover; padding:80px 0; margin:0; 
 box-shadow:0 1px 2px 1px rgba(0,0,0,0.2); position:relative;}
 .bg_form .form-b{ background:#98ce8a; padding:25px 20px; border-radius:5px; border:solid 1px #a7ada3}
-.bg_form .form-b h4{ font-size:33px; color:#fff; text-transform:uppercase;    font-family: 'MyriadPro-Semibold'; text-align:center; font-weight:normal}
+.bg_form .form-b h4{ font-size:33px; color:#fff; text-transform:uppercase;    font-family: 'PT Sans', sans-serif; text-align:center; font-weight:normal}
 .bg_form .form-b .btn.send{ margin:20px auto 0; display:block; font-size:18px; text-transform:uppercase; padding:5px 40px}
 .bg_form .form-b label{ margin:0 0 0 12px; font-size:14px; font-family:arial; color:#fff; font-weight:normal}
 .bg_form .form-b input{ height:34px; border-radius:3px}

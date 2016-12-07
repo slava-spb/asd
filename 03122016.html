@@ -1,0 +1,74 @@
+
+<meta charset="utf-8">
+<script type="text/javascript">
+  //реализовать объект управления (+конструктор)
+  //идентифик.данные (firstname, lastname, уровень дохода)
+  //работает с данными которые в другом объекте (Объект-база)
+  //реализовать методы (n>=5) запускаемые в зависимости от прав
+  //Объект-база (map) работает с методом (реализовать с помощью массива,...)
+  //нужно отобразить объект-базу
+
+  
+
+  //объект-база
+  var database =
+  {
+    map: [31,21,111,211],
+    levelthreat: 5,
+    cash: 0
+  };
+
+    //идентификационные данные
+  function user(firstname, lastname, levelaccess, level)
+  {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.levelaccess = levelaccess;
+  
+  
+  //отображение карты
+  this.displaymap = function ()
+  {
+  var array = [][];
+	for (var i = 0; i < 3 i++)
+	{
+		array[i] = "\t";
+		for(var j = 0; j < 3; j++)
+		{
+			min = 1;
+			max = 9;
+		array[j] = Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+			console.log(array);
+
+	}
+	return array;
+  }
+
+  //действие с картой базы
+  this.actionmap = function()
+  {
+
+  }
+
+  //узнать счёт
+  this.displaycash = function()
+  {
+
+	return database.cash;
+	
+ }
+  //добавление денег
+
+  this.addcash = function ()
+  { 
+	this.displaycash();
+	a =+ prompt("Enter number");
+  	database.cash +=  a;
+	return database.cash;
+  }
+  
+  }
+  
+  var user1 = new user ("Vanya", "Menshchikov", 5, 5);
+</script>
