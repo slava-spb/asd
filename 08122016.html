@@ -55,22 +55,22 @@ currentcolor = 0;
 color = ['red', 'green', 'blue', 'orange', 'pink', 'black'];
 
 var t = document.getElementsByTagName('form')[0];
-t.addEventListener('click', handler, false)
+t.addEventListener('click', handler, true)
 var t = document.getElementsByTagName('div')[0];
-t.addEventListener('click', handler, false)
+t.addEventListener('click', handler, true)
 var t = document.getElementsByTagName('div')[1];
-t.addEventListener('click', handler, false)
+t.addEventListener('click', handler, true)
 var t = document.getElementsByTagName('p')[0];
-t.addEventListener('click', handler, false)
+t.addEventListener('click', handler, true)
 
 
 function handler(e) {
     currentcolor = (currentcolor + 1) % color.length;
     //e.preventDefault() // браузер ­ стоять
     this.style.backgroundColor = color[currentcolor];
-    e.stopPropagation() //событие ­ не всплывать
+    //e.stopPropagation() //событие ­ не всплывать
     console.log(this);
-    // alert(e.target+'---'+this);
+     alert(e.target+'---'+this);
     return false // Завершение
 }
 //alert();
