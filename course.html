@@ -1,33 +1,40 @@
 <script>
+    var slovo = 'Европарламент одобрил';
+    var alf = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'];
 
-var slovo='аа тт';
-var alf = ['а','б','в','г','д','е','ё','ж','з','и','й','к','л','м','н','о','п','р','с','т','у','ф','х','ц','ч','ш','щ','ъ','ы','ь','э','ю','я'];
+    slovo = slovo.split('');
+    //Math.floor(Math.random()*(max - min + 1)) + min;
 
-slovo=slovo.split('');
-//Math.floor(Math.random()*(max - min + 1)) + min;
+    var a = '';
+    s = {};
+    for (c = 0; c < alf.length; c++) {
+        b = 0;
+        for (i = 0; i < slovo.length; i++) {
+            if (slovo[i] == alf[c]) {
+                b++;
+                s[c] = +b;
+                //console.log(s[c])
+            }
+        }
 
-var a =''; 
+        if (s[c] != undefined) {
+            console.log('буква:\t' + alf[c] + ' Встречается\t' + s[c] + '\t раз')
+        }
+        //else {		console.log('буквы:\t'+alf[c]+ '\t нет в этом слове\t')		}
+    }
 
-for (c=0;c<alf.length;c++)
-	{
-	for(i=0; i<slovo.length; i++){
-		
-		if (slovo[i]==alf[c]){
-		
-			console.log(alf[c])
-		
-	// console.log('b');
-	//	console.log('alf-c'+alf[c])
-		}
+    		
+function compareRandom() {
+  return Math.random() - 0.5;
+}
 
-	}
-
-		//a=a+slovo[i];
-
-		}
-	//console.log("буква"+alf[0]+'встречаетcя'+ b+'раз')
-
-	console.log(a)
+slovo.sort(compareRandom);
+console.log(slovo)			
 	
 
+for (i = 0; i < slovo.length; i++) {
+        a = a + slovo[i];
+    }
+		console.log(a)
+		
 </script>
