@@ -45,27 +45,30 @@ border: 1px solid blue;
 
 <form style="background-color:red">FORM
 <div style="background-color:red" >DIV
-<div style="background-color:red" >div2
+<div style="background-color:red" >div2<input type="checkbox" >
 <p style="background-color:red" >P</p>
 </div></div>
 </form>
 
 <script type='text/javascript'>
+//getElementsByTagName(input);
+
 currentcolor = 0;
 color = ['red', 'green', 'blue', 'orange', 'pink', 'black'];
 
 var t = document.getElementsByTagName('form')[0];
-t.addEventListener('click', handler, true)
+t.addEventListener('click', handler, false)
 var t = document.getElementsByTagName('div')[0];
-t.addEventListener('click', handler, true)
+t.addEventListener('click', handler, false)
 var t = document.getElementsByTagName('div')[1];
-t.addEventListener('click', handler, true)
-var t = document.getElementsByTagName('p')[0];
-t.addEventListener('click', handler, true)
+t.addEventListener('click', handler, false)
+var t = document.getElementsByTagName('p')[0]; 
+t.addEventListener('click', handler, false)
 
 
 function handler(e) {
     currentcolor = (currentcolor + 1) % color.length;
+    e.stopPropagation() //событие ­ не всплывать
     //e.preventDefault() // браузер ­ стоять
     this.style.backgroundColor = color[currentcolor];
     //e.stopPropagation() //событие ­ не всплывать
