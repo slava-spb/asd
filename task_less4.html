@@ -1,0 +1,34 @@
+<script>
+
+function calc(a,b){
+	sum = a+b;
+	for(var i=2; i<arguments.length;i++){
+		//console.log(arguments.length);
+		//sum=sum+arguments[i];
+		sum+=arguments[i];
+	};
+	return sum;
+}
+
+cat={};
+cat.hunger=100;
+cat.feed = function() {
+	//cat.hunger=cat.hunger-20;
+	cat.hunger-=20;
+	console.log('Murrr');
+}
+
+
+/* function sum2(n){
+	if (n==1) {return 1}
+	return n+sum2(n-1);
+}
+sum2(10)
+ */
+
+var boec={name:'Ivan', familia:'Petroff'}
+boec.ruczak={
+	maxves:100, vmestimost:20, predmets:['udochka','gruzila']
+	}
+
+</script>

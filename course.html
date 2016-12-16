@@ -1,6 +1,11 @@
 ﻿<script>
+<<<<<<< HEAD
     var slovo = 'аодился в усадьбе Ясная Поляна.'
     var alf = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'];
+=======
+    var slovo = 'Родился в усадьбе';
+	var alf = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'];
+>>>>>>> 57dfb260ca1e7f8b069522fcf75f85233d47c274
 
     slovo = slovo.split('');
     //Math.floor(Math.random()*(max - min + 1)) + min;
@@ -41,10 +46,23 @@ alert( Arrays(arrA,arrB) ); */
         if (s[c] != undefined) {
             console.log('буква:\t' + alf[c] + ' Встречается\t' + s[c] + '\t раз')
         }
-        //else {		console.log('буквы:\t'+alf[c]+ '\t нет в этом слове\t')		}
+        //else {console.log('буквы:\t'+alf[c]+ '\t нет в этом слове\t')}
     }
+<<<<<<< HEAD
    	
 	for (i = 0; i < slovo.length; i++) {
+=======
+
+function alf_random() {
+  return Math.random() - 0.5;
+}
+
+slovo.sort(alf_random);
+console.log(slovo)			
+	
+
+for (i = 0; i < slovo.length; i++) {
+>>>>>>> 57dfb260ca1e7f8b069522fcf75f85233d47c274
         a = a + slovo[i];
     }
     console.log(a)
