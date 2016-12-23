@@ -41,7 +41,12 @@ document.getElementById('send').onclick = function() {
 
 a=(document.getElementById('textInput').value);
 
-document.createElement("<div id='text-item-01'>"+a+"</div>'");
+ var div = document.createElement('div');
+  div.className = "alert alert-success";
+  div.innerHTML = a;
+//	document.getElementsByClassName('col-xs-8').appendChild(div);
+  document.body.appendChild(div)
+  
 }
 
 
