@@ -59,5 +59,3 @@
 
     const DEBUG = true;
     echo  DEBUG;
-    $times = date("i");
-    echo $times;
