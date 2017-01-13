@@ -1,22 +1,3 @@
-
-<input type="button" id="button" value="Я кнопка.Не кликай меня!" />
-
-
-<script>
-button.onmousedown = test;
-button.onmouseup = test;
-
-function test(){
-	//this.value= 'fuck';
-	alert( //this.value //'Ты меня кликнул... Теперь повтори!' 
-	);
-}
-
-</script>
-
-
-
-
 <input id="elem" type="button" value="Нажми меня"/>
 <script> 
 function handler1() { alert('Спасибо!'); };
@@ -35,22 +16,16 @@ elem.addEventListener("mouseup", handler3);
 
 
 
-<style>
-body * {
-margin: 10px;
-border: 1px solid blue;
-}
-
-</style>
-
 <form style="background-color:red">FORM
 <div style="background-color:red" >DIV
-<div style="background-color:red" >div2
+<div style="background-color:red" >div2<input type="checkbox" >
 <p style="background-color:red" >P</p>
 </div></div>
 </form>
 
 <script type='text/javascript'>
+//getElementsByTagName(input);
+
 currentcolor = 0;
 color = ['red', 'green', 'blue', 'orange', 'pink', 'black'];
 
@@ -60,15 +35,16 @@ var t = document.getElementsByTagName('div')[0];
 t.addEventListener('click', handler, false)
 var t = document.getElementsByTagName('div')[1];
 t.addEventListener('click', handler, false)
-var t = document.getElementsByTagName('p')[0];
+var t = document.getElementsByTagName('p')[0]; 
 t.addEventListener('click', handler, false)
 
 
 function handler(e) {
     currentcolor = (currentcolor + 1) % color.length;
+    e.stopPropagation() //событие ­ не всплывать
     //e.preventDefault() // браузер ­ стоять
     this.style.backgroundColor = color[currentcolor];
-    e.stopPropagation() //событие ­ не всплывать
+    //e.stopPropagation() //событие ­ не всплывать
     console.log(this);
     // alert(e.target+'---'+this);
     return false // Завершение
