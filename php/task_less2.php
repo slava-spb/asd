@@ -33,7 +33,6 @@ for($i=0, $n = count($arr); $i < $n/2; $i++){
 		$arr[$i]=$arr[$i]+$arr[$n-$i];
 		$arr[$n-$i]=$arr[$i]-$arr[$n-$i];
 		$arr[$i]=$arr[$i]-$arr[$n-$i];
-
 		//echo $arr[$i] . "\t";
 		//var_dump($arr[$i]);
 		//var_dump($arr[$n-$i]);
@@ -51,7 +50,7 @@ for($ii=0, $nn = count($arr1); $ii <= $nn; $ii++){
 			if ($arr1[$iii-1] > $arr1[$iii]){
 					$mod = $arr1[$iii-1];
                     $arr1[$iii-1] = $arr1[$iii];
-                    $arr1[$iii] = $mod;
+					$arr1[$iii] = $mod;
 				}
 		}
 }
