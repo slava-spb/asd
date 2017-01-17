@@ -38,14 +38,15 @@ echo palindrome() ."\n";
 //- если дата - вчерашнее число, то возвращает "вчера в 19:50"
 //- иначе возвращает дату на русском языке - "12 марта 2016 года в 19:50"
 
-function dateReturn($dateF='17.01.2017 01:38')
+function dateReturn($dateF='11.01.2017 02:38')
 {
+//Fix encoding for russian locale on windows
+//$locale = setlocale(LC_ALL, 'ru_RU.CP1251', 'rus_RUS.CP1251', 'Russian_Russia.1251');
+
     $date_ins= explode(' ', $dateF);
     $act_date= explode(' ', date("d.m.Y H:i"));
     $date_ins2= explode('.', $date_ins[0]);
     $act_date2= explode('.', $act_date[0]);
-    //var_dump(date("d.m.Y H:i"));
-    //var_dump($act_date);
     if ($date_ins[0] == $act_date[0])
     {
         $a= "сегодня в " . date("H:i");
@@ -55,9 +56,8 @@ function dateReturn($dateF='17.01.2017 01:38')
         $a= "вчера в " . date("H:i");
     }
     else {
-        $a= date("d.m.Y H:i");
+        $a= date(" d F Y года в h:m");
     }
-
     return $a;
 }
 echo dateReturn();
