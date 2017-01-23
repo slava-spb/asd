@@ -1,37 +1,6 @@
-<?php
-$posts = [
-    [
-        'id' => 1,
-        'title' => 'Запись №1',
-        'content' => 'Текст записи №1',
-        'created' => 564654,
-        'updated' => 56478321,
-    ],
-    [
-        'id' => 2,
-        'title' => 'Запись №2',
-        'content' => 'Текст записи №2',
-        'created' => 2342,
-        'updated' => 456,
-    ],
-    [
-        'id' => 3,
-        'title' => 'Запись №3',
-        'content' => 'Текст записи №3',
-        'created' => 2341232,
-        'updated' => 412356,
-    ],
-];
-?>
 
-<!DOCTYPE html >
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>блог на php</title>
-</head>
-
-<body>
+<?php require_once __DIR__ . '/../init.php' ?>
+<?php include  __DIR__ . '/../app/views/layout/header.php'; ?>
 
     <?php  foreach ($posts as $post): ?>
 
@@ -52,10 +21,10 @@ $posts = [
             </div>
             <footer></footer>
         </section>
-<!-- Заканчиваем foreach -->
+    <!-- Заканчиваем foreach -->
     <?php endforeach; ?>
 
+<?php include __DIR__ . '/../app/views/layout/footer.php'; ?>
 
-
-</body>
-</html>
+<?php echo __DIR__  ?>
+<?php echo __FILE__ ?>
