@@ -1,5 +1,7 @@
 
-<?php require_once __DIR__ . '/../init.php' ?>
+<?php require_once __DIR__ . '/../init.php';
+$posts = postGetAll(); //выводим посты
+?>
 <?php include  __DIR__ . '/../app/views/layout/header.php'; ?>
 
     <?php  foreach ($posts as $post): ?>

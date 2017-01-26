@@ -17,6 +17,8 @@ function postGetById($id)
 function postSave( array  $post, array &$errors = null)
 {
     //очистка и валидация данных
+    $post = sanitize($post, postSanitizeRules(), $errors);
+
     if ($errors)
     {
         return $post;
@@ -27,5 +29,25 @@ function postSave( array  $post, array &$errors = null)
         $errors['db'] = 'Не удалось сохранить данные в базу';
     }
     return $post;
+}
+
+function postSanitizeRules()
+{
+    return [
+        'id' => [
+            'filter' => FILTER_VALIDATE_INT,
+            'option' => [
+                'min_range' => 1,
+            ]
+        ],
+        'title' => [
+            'required' => true, //обязательное поле для заполнения
+            'filter' => FILTER_SANITIZE_SPECIAL_CHARS,
+        ],
+        'content' => [
+            'required' => true, //обязательное поле для заполнения
+            'filter' => FILTER_SANITIZE_SPECIAL_CHARS,
+            ],
+    ];
 }
 ?>

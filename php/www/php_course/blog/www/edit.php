@@ -3,10 +3,10 @@
 require_once __DIR__ . '/../init.php';
 //var_dump($_POST);
 
-if (!isAuthorize()) {
+/*if (!isAuthorize()) {
     header('location: login.php');
     exit;
-}
+}*/
 
 
 //$date = isset($_POST['post'] ? $_POST['post'] : []);
@@ -35,6 +35,8 @@ if ($data) {
         exit;
     }
 //всплывающее сообшщение с ошибками
+//var_dump($errors);
+
 }
 
 ?>

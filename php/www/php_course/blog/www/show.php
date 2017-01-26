@@ -2,7 +2,8 @@
 
 require_once  __DIR__ . '/../init.php';
 
-/**/
+$post = postGetById($_GET['id'] ?? null);
+
 //var_dump($_SERVER);
 
 $post = $posts[$_GET['id']] ?? null;
