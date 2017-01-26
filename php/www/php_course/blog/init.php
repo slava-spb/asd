@@ -1,6 +1,6 @@
 <?php
 
-$posts = [
+/*$posts = [
     [
         'id' => 0,
         'title' => 'Запись №1',
@@ -23,7 +23,7 @@ $posts = [
         'updated' => 412356,
     ],
 ];
-
+*/
 const ROOT_DIR = __DIR__;
 
 require_once ROOT_DIR . '/libs/storage.php';
@@ -33,3 +33,5 @@ require_once ROOT_DIR . '/libs/auth.php';
 require_once ROOT_DIR . '/libs/view.php';
 
 require_once  ROOT_DIR . '/app/models/post.php';
+
+session_start();
