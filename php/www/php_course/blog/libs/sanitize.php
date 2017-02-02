@@ -21,7 +21,8 @@ function sanitize(array $data, array $rules, array &$errors = null)
         $rules[$key] = $rule; //присваиваем новое значение вне foreach
     }
 
-    $data = array_map('trim', $data);
+    $data = array_map('tri
+    m', $data);
     $filteredData =  filter_var_array($data, $rules);
 
     foreach ($filteredData as $attribute => $value) {
