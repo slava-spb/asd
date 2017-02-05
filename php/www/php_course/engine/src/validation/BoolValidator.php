@@ -1,5 +1,7 @@
+
 <?php
 
+namespace SlavaSpb\engine\Validation;
 class BoolValidator extends Validator
 {
    public function filter($value)

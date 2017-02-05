@@ -1,5 +1,7 @@
 <?php
 
+namespace SlavaSpb\engine\Validation;
+
 abstract class Validator
 {
     protected $default; //если валидация с ошибкой, то возврат default
